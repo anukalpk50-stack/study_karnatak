@@ -163,19 +163,16 @@ section .view2 .right p {
 }
 @media (max-width: 1024px) {
   section {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   section .view1,
   section .view2 {
     width: 100%;
+    height: auto;
   }
   section .view1 .left {
     height: auto;
     padding: 4rem 3rem;
-  }
-  section .view2 {
-    height: auto;
-    min-height: 100vh;
   }
 }
 @media (max-width: 768px) {
@@ -209,6 +206,9 @@ section .view2 .right p {
   section .view1 .left h1 {
     font-size: 1.5rem;
   }
+  section .view1 .left form {
+    gap: 0.6rem;
+  }
   section .view1 .left form input {
     height: 3.5rem;
   }
@@ -221,6 +221,9 @@ section .view2 .right p {
   }
   section .view1 .left form .login-footer {
     text-align: center;
+  }
+  section .view2 .right img {
+    height: 6rem;
   }
   section .view2 .right h1 {
     font-size: 1.5rem;

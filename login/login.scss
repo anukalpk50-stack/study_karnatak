@@ -173,18 +173,15 @@
            }
            // Laptops & Tablets
            @media (max-width: 1024px) {
-               flex-direction: column;
+               flex-direction: column-reverse;
                .view1,
                .view2 {
                    width: 100%;
+                   height: auto;
                }
                .view1 .left {
                    height: auto;
                    padding: 4rem 3rem;
-               }
-               .view2 {
-                   height: auto;
-                   min-height: 100vh;
                }
            }
            // Medium Tablets
@@ -220,6 +217,7 @@
                        font-size: 1.5rem;
                    }
                    form {
+                       gap: 0.6rem;
                        input {
                            height: 3.5rem;
                        }
@@ -236,6 +234,9 @@
                    }
                }
                .view2 .right {
+                   img {
+                       height: 6rem;
+                   }
                    h1 {
                        font-size: 1.5rem;
                    }
