@@ -30,7 +30,7 @@
                 <p>
                     Access Study Materials,Mock Tests & Expert Guidance - All <br> in One Place
                 </p>
-                <form class="register-form" onsubmit="event.preventDefault();">
+                <form class="register-form">
 
 
                     <input type="text" id="username" name="username_field" placeholder="Full Name" required>
@@ -38,6 +38,7 @@
                     <input type="number" id="mobile" name="mobile_field" placeholder="Mobile Number" required>
                     <input type="password" id="password" name="password_field" placeholder="Password" required>
                     <input type="password" id="confirm_password" name="confirm_password_field" placeholder="Confirm Password" required>
+                    <!-- <p id="password-error" style="color: red; font-size: 0.8em; text-align: center;"></p> -->
                     <button type="submit" class="btn-register">Register</button>
                     <div class="terms-container">
                         <input type="checkbox" id="terms" required checked>
@@ -45,11 +46,13 @@
                     </div>
                 </form>
                 <div class="login-footer">
-                    Already have an account? <a href="#">Login</a>
+                    Already have an account? <a href="/login/login.html">Login</a>
                 </div>
             </div>
         </div>
     </section>
+
 </body>
+<script src="register.js"></script>
 
 </html>

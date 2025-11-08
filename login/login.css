@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #000000;
+  line-height: 1.6;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+}
+section .view1 {
+  width: 45%;
+  margin: 0 auto;
+  color: white;
+}
+section .view1 .left {
+  background-color: #0E4268;
+  padding-top: 9rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  height: 100vh;
+}
+section .view1 .left h1 {
+  font-size: 2rem;
+}
+section .view1 .left p {
+  margin-top: 20px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+section .view1 .left form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+section .view1 .left form input {
+  height: 4rem;
+  width: 100%;
+  padding: 0.6rem;
+  padding-left: 2rem;
+  color: #000000;
+  font-weight: 900;
+  border: none;
+  border-color: transparent;
+  border-radius: 10px;
+  font-size: medium;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+section .view1 .left form .btn-login {
+  background-color: #f7951e;
+  height: 3.8rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-color: transparent;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+}
+section .view1 .left form .terms-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+section .view1 .left form .terms-container input[type=checkbox] {
+  width: 1rem;
+  height: 1rem;
+}
+section .view1 .left form .terms-container a {
+  color: white;
+  text-decoration: underline;
+}
+section .view1 .left form .forgot-password {
+  margin-top: -2.5rem;
+  text-align: right;
+}
+section .view1 .left form .forgot-password a {
+  color: white;
+}
+section .view1 .left form .login-footer {
+  text-align: center;
+}
+section .view1 .left form .login-footer a {
+  color: #f7951e;
+  font-weight: bold;
+}
+section .view2 {
+  height: 100vh;
+  width: 55%;
+  margin: 0 auto;
+}
+section .view2 .right {
+  background-image: url(https://res.cloudinary.com/dit69lweg/image/upload/v1762592595/background_scyjom.png);
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 4rem;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section .view2 .right img {
+  margin-top: -5rem;
+  height: 7rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 19rem;
+}
+section .view2 .right h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+}
+section .view2 .right p {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 80%;
+  opacity: 0.7;
+  line-height: 2;
+}
+@media (min-width: 1441px) {
+  section .view1 .left {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  section .view2 .right h1 {
+    font-size: 3rem;
+  }
+  section .view2 .right p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  section {
+    flex-direction: column;
+  }
+  section .view1,
+  section .view2 {
+    width: 100%;
+  }
+  section .view1 .left {
+    height: auto;
+    padding: 4rem 3rem;
+  }
+  section .view2 {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  section .view1 .left {
+    padding: 4rem 2rem;
+  }
+  section .view1 .left h1 {
+    font-size: 1.8rem;
+  }
+  section .view1 .left p {
+    font-size: 0.9rem;
+  }
+  section .view2 .right {
+    padding: 2rem;
+  }
+  section .view2 .right h1 {
+    font-size: 2rem;
+  }
+  section .view2 .right p {
+    font-size: 0.9rem;
+  }
+  section .view2 .right img {
+    width: 15rem;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  section .view1 .left {
+    padding: 3rem 1.5rem;
+  }
+  section .view1 .left h1 {
+    font-size: 1.5rem;
+  }
+  section .view1 .left form input {
+    height: 3.5rem;
+  }
+  section .view1 .left form .btn-login {
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+  section .view1 .left form .forgot-password {
+    margin-top: -2rem;
+  }
+  section .view1 .left form .login-footer {
+    text-align: center;
+  }
+  section .view2 .right h1 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=login.css.map */
