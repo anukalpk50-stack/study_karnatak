@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 4rem;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .view1 {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+header .view1 #Logo {
+  width: 20%;
+  height: auto;
+}
+header .view1 .search {
+  width: 30rem;
+  height: 2rem;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  align-items: center;
+  padding: 5px;
+}
+header .view1 .search input {
+  width: 90%;
+  height: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  background-color: transparent;
+}
+header .view1 .search button {
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-color: transparent;
+  background-color: #114269;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header .view1 .search button i {
+  font-size: 18px;
+}
+header .view2 {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 2rem;
+  font-size: 14px;
+  cursor: pointer;
+}
+header .view2 ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header .view2 ul li {
+  margin: 0 10px;
+}/*# sourceMappingURL=home.css.map */
